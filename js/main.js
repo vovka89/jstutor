@@ -16,8 +16,6 @@ async function searchBySubBreeds(sub) {
     return response.json();
 }
 
-console.log(breed);
-
 getDogType()
     .then((res) => {
         const div = document.getElementById('dogBreedsSelector');
@@ -45,9 +43,7 @@ dogBreeds.addEventListener("change", function () {
 });
 
 
-
-
-// searchBySubBreeds(breed)
-//     .then((res) => {
-//         console.log(res.message);
-//     })
+searchBySubBreeds(breed)
+    .then((res) => {
+        console.log(res.message);
+    })
