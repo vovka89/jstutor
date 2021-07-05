@@ -1,0 +1,9 @@
+.images {
+    display: flex;
+    flex-wrap: wrap;
+}
+.images img {
+    max-width: 25%;
+    display: block;
+    padding: 5px 5px;
+}
